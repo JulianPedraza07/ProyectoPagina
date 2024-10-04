@@ -1,0 +1,489 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-gray-200">
+		<div class="bg-white h-16 flex items-center">
+			<header class="flex justify-between container max-w-6xl mx-auto">
+				<div class="flex space-x-4">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="3em"
+						height="3em"
+						viewBox="0 0 48 48"
+						><g
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="4"
+							><rect
+								width="38"
+								height="6"
+								x="3.609"
+								y="36.534"
+								fill="currentColor"
+								rx="2"
+								transform="rotate(-10 3.61 36.534)"></rect><path
+								d="m44 40l-4-4"></path><path
+								fill="currentColor"
+								d="m8 4l18.385 18.385l-4.243 4.242L9.414 13.9c-2.828-2.83-2.828-4.243-2.828-5.657C6.586 6.828 8 4 8 4"
+							></path><path d="m8 4l18 18l9 9"></path></g
+						>
+					</svg>
+				</div>
+
+				<menu class="mt-3">
+					<ul class="space-x-16 ml-60">
+						<li class="inline font-semibold">
+							<a href="#">Services</a>
+						</li>
+						<li class="inline font-semibold">
+							<a href="#">Portfolio</a>
+						</li>
+						<li class="inline font-semibold">
+							<a href="#">About</a>
+						</li>
+						<li class="inline font-semibold">
+							<a href="#">Blog</a>
+						</li>
+					</ul>
+				</menu>
+				<div class="space-x-4 mt-1">
+					<li class="inline font-semibold mr-12">
+						<a href="#">Login</a>
+					</li>
+					<button
+						class="text-white font-semibold bg-orange-600 hover:bg-orange-500 text-center px-4 py-2 rounded-md"
+						>Book a Call</button
+					>
+				</div>
+			</header>
+		</div>
+
+		<div class="bg-white p-5 flex flex-col items-center">
+			<h1 class="text-6xl font-bold mb-4 text-center mt-10 w-3/5">
+				Expert Squarespace Design and Development
+			</h1>
+			<p
+				class="text-lg text-gray-700 font-semibold mb-8 text-center w-3/5 mt-7"
+			>
+				At Pocketknife, we have years of experience designing and
+				developing Squarespace websites. We know how to create websites
+				that are visually appealing, easy to use, and SEO-friendly.
+			</p>
+			<button
+				class="bg-orange-600 hover:bg-orange-500 text-white rounded-md px-6 py-3 font-semibold"
+			>
+				Book a Call
+			</button>
+			<div class="mt-10 flex justify-center space-x-40">
+				<div class="flex space-x-1 items-center">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="1em"
+						height="1em"
+						viewBox="0 0 36 36"
+						><path
+							fill="#dd2e44"
+							d="M35.885 11.833c0-5.45-4.418-9.868-9.867-9.868c-3.308 0-6.227 1.633-8.018 4.129c-1.791-2.496-4.71-4.129-8.017-4.129c-5.45 0-9.868 4.417-9.868 9.868c0 .772.098 1.52.266 2.241C1.751 22.587 11.216 31.568 18 34.034c6.783-2.466 16.249-11.447 17.617-19.959c.17-.721.268-1.469.268-2.242"
+						></path></svg
+					>
+					<span>Lovely Design</span>
+				</div>
+				<div class="flex space-x-1 items-center">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="1em"
+						height="1em"
+						viewBox="0 0 32 32"
+						><path
+							fill="currentColor"
+							d="M8 4v4H4V4zM2 2v8h8V2zm16 5v4h-4V7zm-6-2v8h8V5zM8 16v4H4v-4zm-6-2v8h8v-8z"
+						></path><path
+							fill="currentColor"
+							d="M22 10v6h-6v6h-6v8h20V10Zm-4 8h4v4h-4Zm-2 10h-4v-4h4Zm6 0h-4v-4h4Zm6 0h-4v-4h4Zm0-6h-4v-4h4Zm-4-6v-4h4v4Z"
+						></path></svg
+					>
+					<span>Smart Development</span>
+				</div>
+				<div class="flex space-x-1 items-center">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="1em"
+						height="1em"
+						viewBox="0 0 48 48"
+						><g fill="none" stroke-width="4"
+							><path
+								fill="#2f88ff"
+								stroke="#000"
+								stroke-linejoin="round"
+								d="M5 8C5 6.89543 5.89543 6 7 6H19L24 12H41C42.1046 12 43 12.8954 43 14V40C43 41.1046 42.1046 42 41 42H7C5.89543 42 5 41.1046 5 40V8Z"
+							></path><path
+								stroke="#fff"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M14 22L19 27L14 32"></path><path
+								stroke="#fff"
+								stroke-linecap="round"
+								d="M26 32H34"></path></g
+						></svg
+					>
+					<span>Strong SEO</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="p-5 flex flex-col items-center">
+			<h1 class="text-6xl font-bold mb-4 text-center mt-10 w-3/5">
+				Why Should You Hire Our Squarespace Experts?
+			</h1>
+			<p
+				class="text-lg text-gray-700 font-semibold mb-4 text-center w-3/5 mt-7"
+			>
+				At Pocketknife, we have years of experience designing and
+				developing Squarespace websites. We know how to create websites
+				that are visually appealing, easy to use, and SEO-friendly.
+			</p>
+			<div class="mt-1 flex justify-center space-x-8">
+				<div
+					class="font-semibold mb-8 text-center w-1/4 mt-7 flex flex-col items-center"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="2em"
+						height="2em"
+						viewBox="0 0 24 24"
+						><path
+							fill="currentColor"
+							d="M21.33 12.91c.09 1.55-.62 3.04-1.89 3.95l.77 1.49c.23.45.26.98.06 1.45c-.19.47-.58.84-1.06 1l-.79.25a1.69 1.69 0 0 1-1.86-.55L14.44 18c-.89-.15-1.73-.53-2.44-1.1c-.5.15-1 .23-1.5.23c-.88 0-1.76-.27-2.5-.79c-.53.16-1.07.23-1.62.22c-.79.01-1.57-.15-2.3-.45a4.1 4.1 0 0 1-2.43-3.61c-.08-.72.04-1.45.35-2.11c-.29-.75-.32-1.57-.07-2.33C2.3 7.11 3 6.32 3.87 5.82c.58-1.69 2.21-2.82 4-2.7c1.6-1.5 4.05-1.66 5.83-.37c.42-.11.86-.17 1.3-.17c1.36-.03 2.65.57 3.5 1.64c2.04.53 3.5 2.35 3.58 4.47c.05 1.11-.25 2.2-.86 3.13c.07.36.11.72.11 1.09m-5-1.41c.57.07 1.02.5 1.02 1.07a1 1 0 0 1-1 1h-.63c-.32.9-.88 1.69-1.62 2.29c.25.09.51.14.77.21c5.13-.07 4.53-3.2 4.53-3.25a2.59 2.59 0 0 0-2.69-2.49a1 1 0 0 1-1-1a1 1 0 0 1 1-1c1.23.03 2.41.49 3.33 1.3c.05-.29.08-.59.08-.89c-.06-1.24-.62-2.32-2.87-2.53c-1.25-2.96-4.4-1.32-4.4-.4c-.03.23.21.72.25.75a1 1 0 0 1 1 1c0 .55-.45 1-1 1c-.53-.02-1.03-.22-1.43-.56c-.48.31-1.03.5-1.6.56c-.57.05-1.04-.35-1.07-.9a.97.97 0 0 1 .88-1.1c.16-.02.94-.14.94-.77c0-.66.25-1.29.68-1.79c-.92-.25-1.91.08-2.91 1.29C6.75 5 6 5.25 5.45 7.2C4.5 7.67 4 8 3.78 9c1.08-.22 2.19-.13 3.22.25c.5.19.78.75.59 1.29c-.19.52-.77.78-1.29.59c-.73-.32-1.55-.34-2.3-.06c-.32.27-.32.83-.32 1.27c0 .74.37 1.43 1 1.83c.53.27 1.12.41 1.71.4q-.225-.39-.39-.81a1.038 1.038 0 0 1 1.96-.68c.4 1.14 1.42 1.92 2.62 2.05c1.37-.07 2.59-.88 3.19-2.13c.23-1.38 1.34-1.5 2.56-1.5m2 7.47l-.62-1.3l-.71.16l1 1.25zm-4.65-8.61a1 1 0 0 0-.91-1.03c-.71-.04-1.4.2-1.93.67c-.57.58-.87 1.38-.84 2.19a1 1 0 0 0 1 1c.57 0 1-.45 1-1c0-.27.07-.54.23-.76c.12-.1.27-.15.43-.15c.55.03 1.02-.38 1.02-.92"
+						></path></svg
+					>
+					<h3 class="text-xl font-semibold">Expertise</h3>
+					<p class="text-gray-700 text-center">
+						We have years of experience designing and developing
+						Squarespace websites.
+					</p>
+				</div>
+				<div
+					class="font-semibold mb-8 text-cente w-1/4 mt-7 flex flex-col items-center"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="2em"
+						height="2em"
+						viewBox="0 0 24 24"
+						><path
+							fill="currentColor"
+							d="m16 11.78l4.24-7.33l1.73 1l-5.23 9.05l-6.51-3.75L5.46 19H22v2H2V3h2v14.54L9.5 8z"
+						></path></svg
+					>
+					<h3 class="text-xl font-semibold">Scalability</h3>
+					<p class="text-gray-700 text-center">
+						We can help you create a website that can grow with your
+						business.
+					</p>
+				</div>
+				<div
+					class="font-semibold mb-8 text-center w-1/4 mt-7 flex flex-col items-center"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="2em"
+						height="2em"
+						viewBox="0 0 24 24"
+						><path
+							fill="currentColor"
+							d="M11.861 2.39a3 3 0 0 1 3.275-.034L19.29 5H21a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-1.52a2.65 2.65 0 0 1-1.285 2.449l-5.093 3.056a2 2 0 0 1-2.07-.008a2 2 0 0 1-2.561.073l-5.14-4.039a2 2 0 0 1-.565-2.446A2 2 0 0 1 2 13.51V6a1 1 0 0 1 1-1h4.947zM4.173 13.646l.692-.605a3 3 0 0 1 4.195.24l2.702 2.972a3 3 0 0 1 .396 3.487l5.009-3.005a.66.66 0 0 0 .278-.79l-4.427-6.198a1 1 0 0 0-1.101-.377l-2.486.745a3 3 0 0 1-2.983-.752l-.293-.292A2 2 0 0 1 5.68 7H4v6.51zm9.89-9.602a1 1 0 0 0-1.093.012l-5.4 3.6l.292.293a1 1 0 0 0 .995.25l2.485-.745a3 3 0 0 1 3.303 1.13L18.515 14H20V7h-.709a2 2 0 0 1-1.074-.313zM6.181 14.545l-1.616 1.414l5.14 4.039l.705-1.232a1 1 0 0 0-.129-1.169L7.58 14.625a1 1 0 0 0-1.398-.08"
+						></path></svg
+					>
+					<h3 class="text-xl font-semibold">Support</h3>
+					<p class="text-gray-700 text-center">
+						We offer training and support for all our Squarespace
+						clients.
+					</p>
+				</div>
+			</div>
+
+			<div
+				class="bg-white p-8 rounded-xl shadow-md mt-6 max-w-4xl container mx-auto flex flex-col"
+			>
+				<p class="font-bold text-center text-2xl">
+					<span class="text-orange-600 font-bold text-2xl"
+						>"
+					</span>Pocketknife was fantastic! They were extremely
+					responsive, professional, and easy to work with, and I would
+					highly recommend them to anyone. Trust me, go with this
+					team. <span class="text-orange-600 font-bold text-2xl">
+						"</span
+					>
+				</p>
+			</div>
+
+			<button
+				class="bg-orange-600 hover:bg-orange-500 text-white rounded-md px-6 py-3 font-semibold mt-4"
+			>
+				Book a Call
+			</button>
+		</div>
+
+		<div class="bg-white p-5 flex flex-col items-center">
+			<h1 class="text-6xl font-bold mb-4 text-center mt-10 w-3/5">
+				Top Rated Squarespace Designers and Developers
+			</h1>
+			<p
+				class="text-lg text-gray-700 font-semibold mb-8 text-center w-3/5 mt-7"
+			>
+				Our team of experienced designers and developers are experts in
+				Squarespace, and we take personal pride in creating websites
+				that help businesses succeed. We have proven track records of
+				designing beautiful, user-friendly, and SEO-optimized websites
+				for businesses in a variety of industries, including
+				photographers, podcasters, videographers, creative agencies,
+				restaurants, and more.
+			</p>
+			<div
+				class="mt-12 container max-w-6xl mx-auto grid grid-cols-3 gap-6"
+			>
+				<div class="bg-white shadow-sm shadow-slate-200 rounded-lg p-4">
+					<div
+						class="h-48 w-48 mx-auto bg-[url('https://m.media-amazon.com/images/I/61WnTqb1MrL.jpg')] bg-center bg-[length:100%_100%]"
+					>
+					</div>
+				</div>
+				<div class="bg-white shadow-sm shadow-slate-200 rounded-lg p-4">
+					<div
+						class="h-48 w-48 mx-auto bg-[url('https://tiendasishop.com/media/catalog/product/m/v/mv7n2lz_a_1.jpg')] bg-center bg-[length:100%_100%]"
+					>
+					</div>
+				</div>
+				<div class="bg-white shadow-sm shadow-slate-200 rounded-lg p-4">
+					<div
+						class="h-48 w-48 mx-auto bg-[url('https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MME73?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1632861342000')] bg-center bg-[length:100%_100%]"
+					>
+					</div>
+				</div>
+			</div>
+			<div
+				class="mt-12 container max-w-6xl mx-auto grid grid-cols-3 gap-6"
+			>
+				<div class="bg-white shadow-sm shadow-slate-200 rounded-lg p-4">
+					<div
+						class="h-48 w-48 mx-auto bg-[url('https://m.media-amazon.com/images/I/61WnTqb1MrL.jpg')] bg-center bg-[length:100%_100%]"
+					>
+					</div>
+				</div>
+				<div class="bg-white shadow-sm shadow-slate-200 rounded-lg p-4">
+					<div
+						class="h-48 w-48 mx-auto bg-[url('https://tiendasishop.com/media/catalog/product/m/v/mv7n2lz_a_1.jpg')] bg-center bg-[length:100%_100%]"
+					>
+					</div>
+				</div>
+				<div class="bg-white shadow-sm shadow-slate-200 rounded-lg p-4">
+					<div
+						class="h-48 w-48 mx-auto bg-[url('https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MME73?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1632861342000')] bg-center bg-[length:100%_100%]"
+					>
+					</div>
+				</div>
+			</div>
+			<button
+				class="bg-orange-600 hover:bg-orange-500 text-white rounded-md px-6 py-3 font-semibold mt-8"
+			>
+				View More Work
+			</button>
+		</div>
+
+		<div class="p-5 flex flex-col items-center">
+			<h1 class="text-6xl font-bold mb-4 text-center mt-10 w-3/5">
+				A Squarespace Design Agency Committed to Your Success
+			</h1>
+			<p
+				class="text-lg text-gray-700 font-semibold mb-8 text-center w-3/5 mt-7"
+			>
+				We are a Squarespace agency with over 10 years of experience in
+				designing and developing for Squarespace. We are members of the
+				fitting Squarespace Circle community and take pride in being a
+				small but mighty agency that's able to develop amazing custom
+				Squarespace websites while having fun.
+			</p>
+
+			<div class="grid grid-cols-2 gap-8 mt-10 max-w-4xl mx-auto">
+				<div
+					class="bg-white p-8 shadow-md flex flex-col items-start justify-center h-full"
+				>
+					<p class="font-bold text-2xl">
+						<span class="text-orange-600 font-bold text-2xl">"</span
+						>
+						Pocketknife was fantastic! They were extremely responsive,
+						professional, and easy to work with, and I would highly recommend
+						them to anyone. Trust me, go with this team.
+						<span class="text-orange-600 font-bold text-2xl">"</span
+						>
+					</p>
+				</div>
+				<div class="flex flex-col space-y-6">
+					<div>
+						<h3 class="text-xl font-bold">Painless Process</h3>
+						<p class="mt-4">
+							We have a simple and enjoyable process that makes it
+							easy for you to get the Squarespace website you
+							want.
+						</p>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold">
+							Personalized Attention
+						</h3>
+						<p class="mt-4">
+							We give you personalized attention and we're always
+							available to answer your questions and provide you
+							with what you need.
+						</p>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold">Guaranteed Results</h3>
+						<p class="mt-4">
+							We're confident that we can create a website that
+							will exceed your expectations and needs.
+						</p>
+					</div>
+					<div class="flex justify-start">
+						<button
+							class="bg-orange-600 hover:bg-orange-500 text-white rounded-md px-6 py-3 font-semibold mt-8"
+						>
+							Our Process and Pricing
+						</button>
+					</div>
+				</div>
+			</div>
+			<h1 class="text-6xl font-bold mb-4 text-center mt-10 w-3/5">
+				See if Pocketknife is right for you
+			</h1>
+			<button
+				class="bg-orange-600 hover:bg-orange-500 text-white rounded-md px-6 py-3 font-semibold mt-4"
+			>
+				Book a Call
+			</button>
+		</div>
+		<div>
+			<footer
+				class="flex justify-between items-start p-8 bg-black text-white"
+			>
+				<div>
+					<h2 class="text-lg font-semibold">
+						Let's Design a Great Squarespace Website
+					</h2>
+					<p class="mt-2">
+						Rocketship proudly calls Columbus and Seattle home. Need
+						Squarespace help?
+					</p>
+					<a href="#" class="underline mt-2 inline-block"
+						>Let's chat.</a
+					>
+					<div class="mt-4 flex space-x-4">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="1em"
+							height="1em"
+							viewBox="0 0 24 24"
+							><path
+								fill="currentColor"
+								d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"
+							></path></svg
+						>
+
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="1em"
+							height="1em"
+							viewBox="0 0 24 24"
+							><g fill="none" fill-rule="evenodd"
+								><path
+									d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"
+								></path><path
+									fill="currentColor"
+									d="M19.753 4.659a1 1 0 0 0-1.506-1.317l-5.11 5.84L8.8 3.4A1 1 0 0 0 8 3H4a1 1 0 0 0-.8 1.6l6.437 8.582l-5.39 6.16a1 1 0 0 0 1.506 1.317l5.11-5.841L15.2 20.6a1 1 0 0 0 .8.4h4a1 1 0 0 0 .8-1.6l-6.437-8.582l5.39-6.16ZM16.5 19L6 5h1.5L18 19z"
+								></path></g
+							></svg
+						>
+					</div>
+				</div>
+
+				<div>
+					<ul class="text-white">
+						<li class="mt-1">
+							<a href="#">Website</a>
+						</li>
+						<li class="mt-1">
+							<a href="#">Services</a>
+						</li>
+						<li class="mt-1">
+							<a href="#">Membership</a>
+						</li>
+						<li class="mt-1">
+							<a href="#">About</a>
+						</li>
+					</ul>
+				</div>
+
+				<div>
+					<ul class="text-white">
+						<li class="mt-1">
+							<a href="#">Why Squarespace?</a>
+						</li>
+						<li class="mt-1">
+							<a href="#">Our Process</a>
+						</li>
+						<li class="mt-1">
+							<a href="#">Client FAQ</a>
+						</li>
+						<li class="mt-1">
+							<a href="#">Privacy Policy</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="3em"
+						height="3em"
+						viewBox="0 0 48 48"
+						><g
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="4"
+							><rect
+								width="38"
+								height="6"
+								x="3.609"
+								y="36.534"
+								fill="currentColor"
+								rx="2"
+								transform="rotate(-10 3.61 36.534)"></rect><path
+								d="m44 40l-4-4"></path><path
+								fill="currentColor"
+								d="m8 4l18.385 18.385l-4.243 4.242L9.414 13.9c-2.828-2.83-2.828-4.243-2.828-5.657C6.586 6.828 8 4 8 4"
+							></path><path d="m8 4l18 18l9 9"></path></g
+						>
+					</svg>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
